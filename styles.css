@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  background-color: lightslategrey;
+}
+
+.header > div {
+  font-size: 32px;
+  font-family: "Roboto", system-ui;
+  padding: 20px;
+  text-align: center;
+}
+
+.fa-house-tsunami {
+  margin-right: 10px;
+}
+
+.form {
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 2px solid #007bff;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+#btn {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #007bff;
+  border: 2px solid #007bff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  outline: none;
+}
+
+#btn:hover {
+  background-color: darkorange;
+}
+
+.fm {
+  border-radius: 25px;
+  padding: 10px;
+  background-color: chartreuse;
+  margin-right: 15px;
+}
+
+.ck {
+  border-radius: 25px;
+  padding: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background-color: chartreuse;
+  margin-right: 15px;
+}
+
+.buttons {
+  position: absolute;
+  right: 50px;
+}
+
+.ck:hover {
+  background-color: crimson;
+}
+
+.fm:hover {
+  background-color: crimson;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+}
+
+.head {
+  grid-row: 1 / 2;
+  margin-top: 20px;
+  font-size: 24px;
+  font-family: "Roboto", system-ui;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.time {
+  font-size: 16px;
+}
+
+.content {
+  display: flex;
+  grid-row: 2 / 3;
+  font-family: "Roboto", system-ui;
+  padding: 50px;
+  justify-content: space-around;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.deg {
+  font-size: 48px;
+  display: flex;
+  flex-direction: column;
+}
+
+.desc {
+  font-size: 18px;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  font-size: 24px;
+  font-family: "Single Day", cursive;
+}
