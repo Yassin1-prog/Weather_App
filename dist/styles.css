@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #cffafe;
 }
 
 .header {
@@ -21,7 +22,7 @@ body {
 
 .form {
   position: relative;
-  margin-top: 20px;
+  padding-top: 20px;
   display: flex;
   justify-content: center;
 }
@@ -47,18 +48,18 @@ input[type="text"] {
   background-color: darkorange;
 }
 
-.fm {
+.ck {
   border-radius: 25px;
   padding: 10px;
   background-color: chartreuse;
   margin-right: 15px;
 }
 
-.ck {
+.fm {
   border-radius: 25px;
   padding: 10px;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 13px;
+  padding-right: 13px;
   background-color: chartreuse;
   margin-right: 15px;
 }
@@ -126,4 +127,14 @@ input[type="text"] {
   justify-items: center;
   font-size: 24px;
   font-family: "Single Day", cursive;
+}
+
+.giph {
+  display: flex;
+  justify-content: center;
+}
+
+.forecast {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
 }
