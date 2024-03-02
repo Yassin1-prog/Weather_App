@@ -122,19 +122,75 @@ input[type="text"] {
 
 .details {
   display: grid;
+  visibility: hidden;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   justify-items: center;
   font-size: 24px;
   font-family: "Single Day", cursive;
+  gap: 20px 30px;
 }
 
-.giph {
+.footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .forecast {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  gap: 50px;
+}
+
+.day {
+  font-size: 24px;
+  padding: 10px;
+}
+
+.wet {
+  width: 75px;
+  height: 75px;
+}
+
+.feel,
+.humidity,
+.wind,
+.visibility,
+.uv,
+.pressure {
+  color: crimson;
+}
+
+@media (max-width: 844px) {
+  .form {
+    position: static;
+  }
+
+  .buttons {
+    position: static;
+  }
+
+  .fm,
+  .ck {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+  }
+
+  .wet {
+    max-width: 50px;
+    max-height: 50px;
+    object-fit: contain;
+  }
+
+  #gph {
+    object-fit: fill;
+    max-width: 400px;
+    max-height: 300px;
+  }
+
+  .deg {
+    font-size: 24px;
+  }
 }
